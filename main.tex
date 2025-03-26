@@ -1,0 +1,77 @@
+\documentclass[12pt,a4paper]{article}
+
+% Essential packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{natbib}  % Optional, for more citation options
+
+\bibliographystyle{unsrt}
+
+% Document information
+\title{Economic impact of biomarker-based aging interventions on healthcare costs and individual value}
+\author{Federico Felizzi}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We investigate the economic impact of controlling the pace of aging through biomarker monitoring and targeted interventions. Using the DunedinPACE epigenetic clock as a measure of biological aging rate, we model how different intervention scenarios affect frailty trajectories and their subsequent influence on healthcare costs, lifespan, and health quality. Our model demonstrates that controlling DunedinPACE from age 50 onwards can reduce frailty prevalence, resulting in cumulative healthcare savings of up to CHF 131,608 per person over 40 years in our most optimistic scenario. From an individual perspective, the willingness to pay for such interventions reaches CHF 6.7 million when accounting for both extended lifespan and improved health quality. These findings suggest substantial economic value in technologies that can monitor and modify biological aging rates, providing evidence for both healthcare systems and consumer-focused business models in longevity medicine.
+\end{abstract}
+
+\section{Graphical Abstract}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/Figure1.png}
+\caption{Illustration of the dynamic influence of DunedinPACE, as controlled by novel health technologies such as pharmaceutical interventions and lifestyle changes. The modifications in DunedinPACE directly affect levels of frailty within the population. As frailty decreases, there are consequent improvements in three critical areas: direct healthcare system costs, survival rates, and overall health quality. These improvements collectively enhance the individual value of residual life, reflecting the economic and personal benefits of effective health management strategies. This model underscores the potential of targeted interventions in DunedinPACE to significantly alter health trajectories and economic outcomes.}
+\label{fig:graphical_abstract}
+\end{figure}
+\newpage
+\section{Introduction}
+Population aging presents unprecedented socioeconomic challenges worldwide\cite{Ruckstuhl2023}, while simultaneously creating new opportunities for artificial intelligence-driven digital health solutions focused on the aging process. This study investigates potential business models that could address challenges related to aging and longevity medicine in real-world settings. We explore whether a combination of treatments, monitoring programs, and lifestyle interventions can meaningfully influence clinical outcomes related to aging and reduce costs associated with caregiving and diminished work capacity during reduced healthspan periods.
+
+When establishing endpoints for longevity interventions, we draw upon Cummings et al.'s comprehensive framework\cite{Cummings2022}, which outlines various endpoints including total mortality, cause-specific mortality, and composite measures. We acknowledge the inherent challenges in establishing surrogacy between intermediate endpoints and final outcomes of interest, particularly regarding statistical power and necessary follow-up duration.
+
+Among potential endpoints, frailty-related measures such as the Frailty Index\cite{Rockwood2005} show particular promise for our objectives because: (1) frailty demonstrates direct correlation with healthcare expenditures\cite{Hoogendijk2019}, and (2) numerous studies have established robust relationships between frailty, all-cause mortality, and major comorbidities including cancer, dementia, and cardiovascular disease.
+
+A promising biomarker for measuring biological age is the DunedinPACE clock, which quantifies the pace of epigenetic change through DNA methylation patterns. Recent research demonstrates that DunedinPACE can predict frailty development and chronic disease onset more effectively than chronological age or alternative biomarkers\cite{Mak2023}. Importantly, this clock can detect impacts of early-life challenges, lifestyle modifications, and genetic factors on aging velocity, offering a comprehensive measure of biological age that reflects past exposures, present condition, and future health trajectories.
+
+In this manuscript, we propose a novel biomarker-based monitoring and intervention strategy for longevity medicine based on routine DunedinPACE assessments in clinical settings. We hypothesize that measuring individuals' pace of aging enables identification of those at risk for accelerated aging, allowing for targeted preventive measures and personalized interventions to slow the aging process and improve health outcomes. We estimate the economic implications of this approach through a predictive model simulating different personalized recommendation scenarios designed to optimize epigenetic clock trajectories.
+
+Our analysis establishes connections between DunedinPACE, frailty progression, and mortality outcomes to estimate:
+
+\begin{enumerate}
+    \item The impact of interventions (at varying efficacy levels) on total healthcare system costs
+    \item Individual willingness-to-pay at different ages based on anticipated improvements in healthspan and lifespan
+    \item Quality-Adjusted Life Year (QALY) improvements resulting from changes in quality-of-life utility and lifespan extension
+\end{enumerate}
+
+Through this approach, we aim to develop an economically viable business model that leverages digital technology and epigenetic monitoring to extend healthy lifespan through prevention and treatment of age-related conditions.
+
+
+\include{methods}
+
+\include{results}
+
+\include{discussion_conclusion}
+
+%% include the bibliography 
+\bibliography{references_longevity}
+
+
+\end{document}
